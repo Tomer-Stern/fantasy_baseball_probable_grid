@@ -1,0 +1,244 @@
+{
+ "teams": [
+  {
+   "id": 133,
+   "name": "Athletics",
+   "abbreviation": "ATH",
+   "teamName": "Athletics",
+   "division": "American League West",
+   "league": "American League"
+  },
+  {
+   "id": 144,
+   "name": "Atlanta Braves",
+   "abbreviation": "ATL",
+   "teamName": "Braves",
+   "division": "National League East",
+   "league": "National League"
+  },
+  {
+   "id": 109,
+   "name": "Arizona Diamondbacks",
+   "abbreviation": "AZ",
+   "teamName": "D-backs",
+   "division": "National League West",
+   "league": "National League"
+  },
+  {
+   "id": 110,
+   "name": "Baltimore Orioles",
+   "abbreviation": "BAL",
+   "teamName": "Orioles",
+   "division": "American League East",
+   "league": "American League"
+  },
+  {
+   "id": 111,
+   "name": "Boston Red Sox",
+   "abbreviation": "BOS",
+   "teamName": "Red Sox",
+   "division": "American League East",
+   "league": "American League"
+  },
+  {
+   "id": 112,
+   "name": "Chicago Cubs",
+   "abbreviation": "CHC",
+   "teamName": "Cubs",
+   "division": "National League Central",
+   "league": "National League"
+  },
+  {
+   "id": 113,
+   "name": "Cincinnati Reds",
+   "abbreviation": "CIN",
+   "teamName": "Reds",
+   "division": "National League Central",
+   "league": "National League"
+  },
+  {
+   "id": 114,
+   "name": "Cleveland Guardians",
+   "abbreviation": "CLE",
+   "teamName": "Guardians",
+   "division": "American League Central",
+   "league": "American League"
+  },
+  {
+   "id": 115,
+   "name": "Colorado Rockies",
+   "abbreviation": "COL",
+   "teamName": "Rockies",
+   "division": "National League West",
+   "league": "National League"
+  },
+  {
+   "id": 145,
+   "name": "Chicago White Sox",
+   "abbreviation": "CWS",
+   "teamName": "White Sox",
+   "division": "American League Central",
+   "league": "American League"
+  },
+  {
+   "id": 116,
+   "name": "Detroit Tigers",
+   "abbreviation": "DET",
+   "teamName": "Tigers",
+   "division": "American League Central",
+   "league": "American League"
+  },
+  {
+   "id": 117,
+   "name": "Houston Astros",
+   "abbreviation": "HOU",
+   "teamName": "Astros",
+   "division": "American League West",
+   "league": "American League"
+  },
+  {
+   "id": 118,
+   "name": "Kansas City Royals",
+   "abbreviation": "KC",
+   "teamName": "Royals",
+   "division": "American League Central",
+   "league": "American League"
+  },
+  {
+   "id": 108,
+   "name": "Los Angeles Angels",
+   "abbreviation": "LAA",
+   "teamName": "Angels",
+   "division": "American League West",
+   "league": "American League"
+  },
+  {
+   "id": 119,
+   "name": "Los Angeles Dodgers",
+   "abbreviation": "LAD",
+   "teamName": "Dodgers",
+   "division": "National League West",
+   "league": "National League"
+  },
+  {
+   "id": 146,
+   "name": "Miami Marlins",
+   "abbreviation": "MIA",
+   "teamName": "Marlins",
+   "division": "National League East",
+   "league": "National League"
+  },
+  {
+   "id": 158,
+   "name": "Milwaukee Brewers",
+   "abbreviation": "MIL",
+   "teamName": "Brewers",
+   "division": "National League Central",
+   "league": "National League"
+  },
+  {
+   "id": 142,
+   "name": "Minnesota Twins",
+   "abbreviation": "MIN",
+   "teamName": "Twins",
+   "division": "American League Central",
+   "league": "American League"
+  },
+  {
+   "id": 121,
+   "name": "New York Mets",
+   "abbreviation": "NYM",
+   "teamName": "Mets",
+   "division": "National League East",
+   "league": "National League"
+  },
+  {
+   "id": 147,
+   "name": "New York Yankees",
+   "abbreviation": "NYY",
+   "teamName": "Yankees",
+   "division": "American League East",
+   "league": "American League"
+  },
+  {
+   "id": 143,
+   "name": "Philadelphia Phillies",
+   "abbreviation": "PHI",
+   "teamName": "Phillies",
+   "division": "National League East",
+   "league": "National League"
+  },
+  {
+   "id": 134,
+   "name": "Pittsburgh Pirates",
+   "abbreviation": "PIT",
+   "teamName": "Pirates",
+   "division": "National League Central",
+   "league": "National League"
+  },
+  {
+   "id": 135,
+   "name": "San Diego Padres",
+   "abbreviation": "SD",
+   "teamName": "Padres",
+   "division": "National League West",
+   "league": "National League"
+  },
+  {
+   "id": 136,
+   "name": "Seattle Mariners",
+   "abbreviation": "SEA",
+   "teamName": "Mariners",
+   "division": "American League West",
+   "league": "American League"
+  },
+  {
+   "id": 137,
+   "name": "San Francisco Giants",
+   "abbreviation": "SF",
+   "teamName": "Giants",
+   "division": "National League West",
+   "league": "National League"
+  },
+  {
+   "id": 138,
+   "name": "St. Louis Cardinals",
+   "abbreviation": "STL",
+   "teamName": "Cardinals",
+   "division": "National League Central",
+   "league": "National League"
+  },
+  {
+   "id": 139,
+   "name": "Tampa Bay Rays",
+   "abbreviation": "TB",
+   "teamName": "Rays",
+   "division": "American League East",
+   "league": "American League"
+  },
+  {
+   "id": 140,
+   "name": "Texas Rangers",
+   "abbreviation": "TEX",
+   "teamName": "Rangers",
+   "division": "American League West",
+   "league": "American League"
+  },
+  {
+   "id": 141,
+   "name": "Toronto Blue Jays",
+   "abbreviation": "TOR",
+   "teamName": "Blue Jays",
+   "division": "American League East",
+   "league": "American League"
+  },
+  {
+   "id": 120,
+   "name": "Washington Nationals",
+   "abbreviation": "WSH",
+   "teamName": "Nationals",
+   "division": "National League East",
+   "league": "National League"
+  }
+ ]
+}

@@ -1,0 +1,8 @@
+.DS_Store
+node_modules/
+*.log
+.Rhistory
+__pycache__/
+
+# Source notes kept local — this repo is public.
+dads_requests.rtf

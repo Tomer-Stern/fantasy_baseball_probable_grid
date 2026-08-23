@@ -1,0 +1,40 @@
+name: Refresh snapshot
+
+# Bakes a fallback copy of the schedule and probables so the site still works
+# if the live MLB API call from the browser fails.
+on:
+  schedule:
+    - cron: '17 */3 * * *'   # every 3 hours
+  workflow_dispatch:          # and on demand
+
+permissions:
+  contents: write
+
+concurrency:
+  group: snapshot
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Build snapshot
+        run: python3 scripts/snapshot.py --out data/snapshot.json
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- data/snapshot.json; then
+            echo "No change."
+          else
+            git add data/snapshot.json
+            git commit -m "Refresh probables snapshot"
+            git push
+          fi

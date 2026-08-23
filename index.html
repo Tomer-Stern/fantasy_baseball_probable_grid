@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Probables Grid — starting pitchers, rest of season</title>
+<meta name="description" content="Projected MLB starting pitchers for every team, through the end of the regular season.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='13' font-size='14'>&#9918;</text></svg>">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="title">
+    <h1>Probables Grid</h1>
+    <p class="tagline">Every team&rsquo;s projected starters, all the way to the end of the regular season.</p>
+  </div>
+  <button id="refresh" type="button" class="refresh" title="Re-pull the latest schedule and probables">
+    <span class="icon" aria-hidden="true">&#8635;</span> Refresh
+  </button>
+</header>
+
+<div id="status" class="status">Loading&hellip;</div>
+
+<section class="controls">
+  <div class="control search-control">
+    <label for="search" class="sr-only">Search pitchers or teams</label>
+    <input id="search" type="search" placeholder="Search a pitcher or team&hellip;" autocomplete="off" spellcheck="false">
+  </div>
+
+  <label class="control toggle">
+    <input id="my-only" type="checkbox"> My pitchers only
+  </label>
+
+  <label class="control toggle">
+    <input id="hide-empty" type="checkbox" checked> Hide pitchers with no starts
+  </label>
+
+  <span id="counts" class="counts"></span>
+</section>
+
+<details class="teams-panel">
+  <summary>Filter by team</summary>
+  <div class="teams-body">
+    <div id="team-filter" class="team-grid"></div>
+    <button id="clear-teams" type="button" class="linkish">Clear team filter</button>
+  </div>
+</details>
+
+<div id="grid-wrap" class="grid-wrap" tabindex="0" role="region" aria-label="Probable starters grid, scrolls horizontally"></div>
+
+<section class="legend">
+  <span class="legend-item"><span class="start c-announced">SEA</span> announced by the club</span>
+  <span class="legend-item"><span class="start c-near">SEA</span> projected</span>
+  <span class="legend-item"><span class="start c-far">SEA</span> projected, long range</span>
+  <span class="legend-item"><span class="start c-tbd">SEA</span> starter not yet named</span>
+  <span class="legend-item"><span class="team-badge">@</span> away game</span>
+</section>
+
+<footer class="notes">
+  <p>
+    <strong>How the projections work.</strong> Clubs only announce starters about ten days out.
+    Past that point each rotation is inferred from who has actually been starting, then rolled
+    forward one slot per game &mdash; which keeps it honest through off-days, doubleheaders and
+    postponements. Announced starters always win over the model, and the cycle re-anchors around them.
+    Every club is treated as a five-man rotation except the Dodgers, who run six.
+  </p>
+  <p>
+    <strong>How accurate is it?</strong> Backtested over four anchor dates in the 2026 season, the model
+    alone picks the right starter <strong>50&ndash;57%</strong> of the time in the first week,
+    <strong>34&ndash;43%</strong> in the second and <strong>30&ndash;33%</strong> in the third, against
+    20% for a random guess from a five-man staff. The near columns are mostly announced fact; the far columns are a genuine estimate,
+    and injuries, call-ups and September roster expansion will break them. Treat the far right of the
+    grid as a planning aid, not a promise.
+  </p>
+  <p class="credit">Data: MLB Stats API. Not affiliated with MLB.</p>
+</footer>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
